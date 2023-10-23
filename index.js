@@ -50,3 +50,15 @@ function reply(phrase) {
 
 let a = reply('How do you do?');
 //The value of return is 'How do you do?
+
+//Création de la fonction greet 
+function greet(name) {
+  return 'Hello ' + name + '!';
+}
+
+//Que vau X 
+function whereIs(name){
+  return 'Where is ' + name + '?'
+}
+let h = whereIs('Jacky')
+//Where is Jacky, this is the value of X
