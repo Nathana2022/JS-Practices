@@ -70,3 +70,9 @@ let h1= hi('Selva');
 let h2= hi('Pola');
 let X = h1 + '' + h2
 //The value of X after execution of code is : 'Hi Selva! Hi Pola!'
+
+//Write a function shout 
+function shout(word){
+  let result = word + word
+  return result
+}
