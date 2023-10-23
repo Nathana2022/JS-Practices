@@ -76,3 +76,10 @@ function shout(word){
   let result = word + word
   return result
 }
+
+//Que vaut X (K)
+function double(name){
+  return name + 'and' + name;
+}
+let K=double('Roy')
+//The value of K is 'Roy and Roy'
