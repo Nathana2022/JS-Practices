@@ -56,9 +56,17 @@ function greet(name) {
   return 'Hello ' + name + '!';
 }
 
-//Que vau X 
+//Que vaut h(X) 
 function whereIs(name){
   return 'Where is ' + name + '?'
 }
 let h = whereIs('Jacky')
 //Where is Jacky, this is the value of X
+
+function hi(name){
+  return 'Hi ' + name + '!'  
+}
+let h1= hi('Selva');
+let h2= hi('Pola');
+let X = h1 + '' + h2
+//The value of X after execution of code is : 'Hi Selva! Hi Pola!'
