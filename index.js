@@ -112,3 +112,9 @@ function indexOfIgnoreCase(s1, s2) {
   let s2Lower = s2.toLowerCase();
   return s1Lower.indexOf(s2Lower);
 }
+
+//Function secondIndexOf
+function secondIndexOf(s1, s2){
+  let firstindex = s1.indexOf(s2);
+  return s1.indexOf(s2, firstindex + 1);
+}
