@@ -93,3 +93,8 @@ function length(name){
 function toCase(word){
   return word.toLowerCase() + '-' + word.toUpperCase();
 }
+
+//The function shortcut
+function shortcut(word1, word2){
+  return word1.charAt(0) + word2.charAt(0);
+}
