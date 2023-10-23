@@ -83,3 +83,8 @@ function double(name){
 }
 let K=double('Roy')
 //The value of K is 'Roy and Roy'
+
+//Write a function length 
+function length(name){
+  return name.length;
+}
