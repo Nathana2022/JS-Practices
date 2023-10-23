@@ -98,3 +98,10 @@ function toCase(word){
 function shortcut(word1, word2){
   return word1.charAt(0) + word2.charAt(0);
 }
+
+//The function firstChar
+
+function firstChar(text) {
+  let Text = text.trim();
+  return Text.charAt(0);
+}
