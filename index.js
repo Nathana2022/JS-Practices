@@ -1,5 +1,5 @@
 //Wich value does x have after execution of the following code?
-let x ='Geeta'
+const x ='Geeta'
 //value of x is Geeta
 
 //Declare a variable flower and assign it the value 'rose'. Declare a second variable tree and assign it the value 'maple'
@@ -43,3 +43,10 @@ let k=hello();
 function echo(sound){
   return sound;
 }
+
+function reply(phrase) {
+  return phrase;
+}
+
+let a = reply('How do you do?');
+//The value of return is 'How do you do?
