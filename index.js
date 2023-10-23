@@ -88,3 +88,8 @@ let K=double('Roy')
 function length(name){
   return name.length;
 }
+
+//Write a function toCase
+function toCase(word){
+  return word.toLowerCase() + '-' + word.toUpperCase();
+}
