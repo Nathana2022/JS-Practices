@@ -190,3 +190,34 @@ function converts(minutes){
 function convertAgeToDays(age) {
   return age * 365;
 }
+
+//You are counting points for a basketball game, given the amount of 2-pointers scored and 3-pointers scored, find the final points for the team and return that value.
+function countingPoints(){
+  let = two_point =0
+  three_point = 0
+  two_point * 2
+  three_point * 3
+  return two_point*2 + three_point*3;
+  let total = two_point*2 + three_point*3;
+  return total;
+}
+
+//34
+
+//Create a function that takes the number of 'wins', 'draws', and 'loses' and calculates the number of points a football team has obtained so far.
+let defaultWin = 3,
+    defaultDraw = 1,
+    defaultLoss = 0;
+
+function footballPoints(wins, draws, losses) {
+    return defaultWin * wins + defaultDraw * draws + defaultLoss * losses;
+}
+
+console.log(footballPoints(3, 4, 2)); // 13
+console.log(footballPoints(5, 0, 2)); // 15
+console.log(footballPoints(0, 0, 1)); // 0
+
+//Given two arguments, return an array which contains these two arguments.
+function makePair(num1, num2){
+  return [num1, num2];
+}
