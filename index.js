@@ -185,3 +185,8 @@ function converts(minutes){
   const seconds = minutes * 60;
   return seconds;
 }
+
+//Write a function that takes the age in years and returns the age in days. 
+function convertAgeToDays(age) {
+  return age * 365;
+}
