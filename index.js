@@ -179,3 +179,9 @@ function countVowel(str) {
 const string = prompt('Enter a string: ');
 const result = countVowel(string);
 console.log(result);
+
+//Write a function that takes an integer minutes and converts it to seconds
+function converts(minutes){
+  const seconds = minutes * 60;
+  return seconds;
+}
