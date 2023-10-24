@@ -142,3 +142,9 @@ let b=3;
 b++;
 b=b*2;
 b--;
+//The value of b(x) is 7
+
+//Write function toFahrenheit that converts a temperature from Celcius to Fahrenheit
+function toFahrenheit(celcius){
+  return 1.8 * celcius + 32;
+}
