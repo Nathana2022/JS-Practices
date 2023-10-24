@@ -221,3 +221,14 @@ console.log(footballPoints(0, 0, 1)); // 0
 function makePair(num1, num2){
   return [num1, num2];
 }
+
+//Write a function to reverse an array
+function reverseArr(input){
+  let ret = newArray;
+  for(let i=input.length - 1; i>=0; i--){
+    ret.push(input[i]);
+  }
+  return ret;
+}
+let a = [3,5,7,8]
+let b = reverseArr(a);
