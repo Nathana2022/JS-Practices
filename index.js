@@ -131,3 +131,8 @@ function normalize(date){
   newDate = newDate.replace('-', '/')
   return newDate;
 }
+
+//Write function add
+function add(x, y){
+  return x+y;
+}
