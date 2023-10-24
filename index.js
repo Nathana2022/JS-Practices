@@ -118,3 +118,16 @@ function secondIndexOf(s1, s2){
   let firstindex = s1.indexOf(s2);
   return s1.indexOf(s2, firstindex + 1);
 }
+
+//Function firstWord
+function firstWord(s){
+  let firstBlank = s.indexOf(' ');
+  return s.substr(0, firstBlank);
+}
+
+//Write function normalize
+function normalize(date){
+  let newDate = date.replace('-', '/');
+  newDate = newDate.replace('-', '/')
+  return newDate;
+}
