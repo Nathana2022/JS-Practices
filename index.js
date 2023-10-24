@@ -136,3 +136,9 @@ function normalize(date){
 function add(x, y){
   return x+y;
 }
+
+//Which value does x have after execution of the following code?
+let b=3;
+b++;
+b=b*2;
+b--;
