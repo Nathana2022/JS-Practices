@@ -223,6 +223,7 @@ function makePair(num1, num2){
 }
 
 //Write a function to reverse an array
+//Reverse an Array using a for loop
 function reverseArr(input){
   let ret = newArray;
   for(let i=input.length - 1; i>=0; i--){
@@ -232,3 +233,10 @@ function reverseArr(input){
 }
 let a = [3,5,7,8]
 let b = reverseArr(a);
+
+//Array.reverse to reverse an array
+function reverseArray(input){
+  const array = [1, 2, 3, 4]
+  array.reverse()
+  return array;
+}
