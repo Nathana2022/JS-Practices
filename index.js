@@ -148,3 +148,10 @@ b--;
 function toFahrenheit(celcius){
   return 1.8 * celcius + 32;
 }
+
+//Write a function onesDigit that takes a natural number and returns the ones digit of that number
+//Exemple : onesDigit(2674)
+//should return 4
+function onesDigit(n){
+  return n % 10;
+}
