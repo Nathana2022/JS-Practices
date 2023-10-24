@@ -155,3 +155,10 @@ function toFahrenheit(celcius){
 function onesDigit(n){
   return n % 10;
 }
+
+//Wrie a function mean that takes 2 numbers and returns their mean value.
+//Example : mean(1,2)
+//Should return 1.5
+function mean(a,b){
+  return (a+b)/2;
+}
