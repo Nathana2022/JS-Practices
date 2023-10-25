@@ -283,3 +283,8 @@ for (var z = 1; z < strs.length; z++) {
   }
 }
 console.log(results.join(''));
+
+//Write a Javascript program to compute the sum and product of an array of integer
+function compute({
+  
+})
