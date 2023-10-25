@@ -275,11 +275,11 @@ console.log(myColor.join());
 const strs = num.toString();
 var results = [strs[0]];
 
-for (var x = 1; x < strs.length; x++) {
-  if (strs[x - 1] % 2 === 0 && str[x] % 2 === 0) {
-    results.push('-', strs[x]);
+for (var z = 1; z < strs.length; z++) {
+  if (strs[z - 1] % 2 === 0 && strs[z] % 2 === 0) {
+    results.push('-', strs[z]);
   } else {
-    results.push(strs[x]);
+    results.push(strs[z]);
   }
 }
 console.log(results.join(''));
