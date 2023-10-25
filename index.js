@@ -248,3 +248,38 @@ function isArray(input){
 //Example usage : 
 console.log(isArray([1, 2, 3])); //true
 console.log(isArray('Hello')); //false
+
+//Write a javascript function to get the first element of an array. Passing the parameter 'n' will return the first 'n' elements of the array
+function getFirstElement(array, n){
+  if(n=== undefined){
+    return array[0];
+  }else {
+    return array.slice(0, n);
+  }
+}
+//Example usage : 
+const myArray = [1, 2, 3, 4, 5];
+console.log(getFirstElement(myArray));
+console.log(getFirstElement(myArray, 3))
+
+//Write a simple Javascript program to join all elements of the following array into a string.
+//Sample array : myColor=["Red", "Green", "White", "Black"]; 
+//Expected Output : "Red, Green, Whrite, Black"
+myColor = ["Red", "Green", "White", "Black"];
+console.log(myColor.toString());
+console.log(myColor.join());
+
+//Write a Javascript program that accepts a numbers as input and inserts dashes (-) between each even number.
+//For example if you accept 025468 the output should be 0-254-6-8
+
+const strs = num.toString();
+var results = [strs[0]];
+
+for (var x = 1; x < strs.length; x++) {
+  if (strs[x - 1] % 2 === 0 && str[x] % 2 === 0) {
+    results.push('-', strs[x]);
+  } else {
+    results.push(strs[x]);
+  }
+}
+console.log(results.join(''));
