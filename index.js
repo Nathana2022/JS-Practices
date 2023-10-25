@@ -240,3 +240,11 @@ function reverseArray(input){
   array.reverse()
   return array;
 }
+
+//Write a javascript function to check whether an 'input' is an array or not
+function isArray(input){
+  return Array.isArray(input)
+}
+//Example usage : 
+console.log(isArray([1, 2, 3])); //true
+console.log(isArray('Hello')); //false
