@@ -273,9 +273,9 @@ console.log(myColor.join());
 //For example if you accept 025468 the output should be 0-254-6-8
 
 const strs = num.toString();
-var results = [strs[0]];
+let results = [strs[0]];
 
-for (var z = 1; z < strs.length; z++) {
+for (let z = 1; z < strs.length; z++) {
   if (strs[z - 1] % 2 === 0 && strs[z] % 2 === 0) {
     results.push('-', strs[z]);
   } else {
@@ -285,13 +285,29 @@ for (var z = 1; z < strs.length; z++) {
 console.log(results.join(''));
 
 //Write a Javascript program to compute the sum and product of an array of integer
-const array = [1, 2, 3, 4, 5, 6];
-let s = 0;
-let p = 1;
-let i;
-for (i = 0; i < array.length; i += 1) 
-   {
-    s += array[i];
-    p *= array[i];
-    }
-console.log(`Sum : ${s} Product :  ${p}`); 
+function calculateSumandProduct(input){
+  const array = [1, 2, 3, 4, 5, 6];
+  let s = 0;
+  let p = 1;
+  let i;
+  for (i = 0; i < array.length; i += 1) 
+     {
+      s += array[i];
+      p *= array[i];
+      }
+  console.log(`Sum : ${s} Product :  ${p}`); 
+  
+}
+
+//Write a JavaScript program to delete the rollno property from the following object. Also print the object before or after deleting the property.
+//Sample object:
+let student =  { 
+  name : "David Rayy", 
+  sclass : "VI", 
+  rollno : 12  };
+console.log(student);
+delete student.rollno;
+console.log(student);
+
+
+
