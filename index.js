@@ -309,5 +309,113 @@ console.log(student);
 delete student.rollno;
 console.log(student);
 
+//Create an objet which describes some of your physical or mental attributes. 
+//Add another property to the object. Show the complete object again. 
+//Delete the least important attribute. Show the complete object again. 
 
 
+
+//Virtual cat CLI Javascript
+class VirtualCat {
+  constructor(name) {
+      this.name = name;
+      this.hunger = 0;
+      this.energy = 100;
+  }
+
+  feed() {
+      this.hunger -= 10;
+      this.energy += 5;
+      return `${this.name} has been fed. Hunger: ${this.hunger}, Energy: ${this.energy}`;
+  }
+
+  sleep() {
+      this.energy += 20;
+      return `${this.name} has taken a nap. Energy: ${this.energy}`;
+  }
+
+  play() {
+      this.energy -= 10;
+      this.hunger += 5;
+      return `${this.name} played with a virtual toy. Hunger: ${this.hunger}, Energy: ${this.energy}`;
+  }
+
+  status() {
+      return `${this.name}'s status - Hunger: ${this.hunger}, Energy: ${this.energy}`;
+  }
+}
+
+const cat = new VirtualCat("Whiskers");
+
+const readline = require('readline');
+const rl = readline.createInterface({
+  input: process.stdin,
+  output: process.stdout
+});
+
+rl.setPrompt(`What would you like to do with ${cat.name}? > `);
+
+rl.prompt();
+
+rl.on('line', (input) => {
+  switch (input.trim()) {
+      case 'feed':
+          console.log(cat.feed());
+          break;
+      case 'sleep':
+          console.log(cat.sleep());
+          break;
+      case 'play':
+          console.log(cat.play());
+          break;
+      case 'status':
+          console.log(cat.status());
+          break;
+      case 'exit':
+          rl.close();
+          break;
+      default:
+          console.log(`Unknown command. Please enter 'feed', 'sleep', 'play', 'status', or 'exit'.`);
+          break;
+  }
+  rl.prompt();
+}).on('close', () => {
+  console.log('Goodbye!');
+  process.exit(0);
+});
+
+//Second façon
+
+let cat =  {
+  name: "Roy",
+  tiredness:0,
+  hunger:0,
+  loneliness:0,
+  happiness:0,
+  //increase
+  feed: function(fullness){
+    let x= fullness + this.hunger
+    console.log(`${this.name} is ${x} %  full `)
+  },
+  energized:function (hour){
+    let x= hour+this.tiredness
+    console.log(`${this.name} is ${x} %  energized `)
+  },
+  socialLife:function(hangout){
+    let x= hangout+this.happiness
+    console.log(`${this.name} is ${x} %  happy `)
+  },
+  //decrease
+  feedMinus:function(gettingHungry){
+    let x= gettingHungry-this.hunger
+    console.log(`${this.name} is getting ${x} %  hungry `)
+  },
+  sleep:function (gettingSleepy){
+    let x= gettingSleepy-this.tiredness
+    console.log(`${this.name} is getting ${x} %  sleepy `)
+  },
+  isolated:function(alone){
+    let x= alone-this.happiness
+    console.log(`${this.name} is getting ${x} %  isolated `)
+  }
+  }
