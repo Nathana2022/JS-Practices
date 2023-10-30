@@ -424,3 +424,93 @@ let chat =  {
     console.log(`${this.name} is getting ${x} %  isolated `)
   }
   }
+
+  //Cat other 
+  class cat {
+    constructor() {
+      this._tiredness = 0;
+      this._hunger = 0;
+      this._loneliness = 0;
+      this._happiness = 0;
+    }
+    //Create methods that increasse/decrease these properties
+    play(tirednessVal, lonelinessVal, hungerVal){
+      this._tiredness += tirednessVal;
+      this._loneliness -= lonelinessVal;
+      this._happiness += hungerVal;
+    }
+    sleep(tirednessVal, lonelinessVal){
+      this._tiredness -= tirednessVal;
+      this._loneliness += lonelinessVal;
+    }
+    eat(hungerVal, happinessVal){
+      this._hunger -= hungerVal;
+      this._happiness += happinessVal;
+    }
+    getAngry(happinessVal){
+      this._happiness -= happinessVal;
+    }
+    printStatus(){
+      const isTired = "The cat is tired";
+      const isNotTired = "The cat is not tired";
+      const isHungry = "The cat is hungry";
+      const isNotHungry = "The cat is not hungry";
+      const isLonely = "The cat is Lonely";
+      const isNotLonely = "The is not lonely";
+      const isHappy = "The cat is happy";
+      const isNotHappy = "The cat is not happy";
+
+      if (this._tiredness > 10){
+        console.log(isTired);
+      }else {
+        console.log(isNotTired);
+      }
+      if (this._hunger > 10){
+        console.log(isHungry);
+      }else {
+        console.log(isNotHungry);
+      }
+      if (this._loneliness > 10){
+        console.log(isLonely);
+      }else {
+        console.log(isNotLonely);
+      }
+      if (this._happiness > 10){
+        console.log(isHappy);
+      }else {
+        console.log(isNotHappy);
+      }
+    }
+    meow(){
+      console.log("MEEEEEEEOOOOOOOWW");
+    }
+    pet(){
+      if(this._happiness<5){
+        console.log("Get away from me!");
+      }else {
+        meow();
+      }
+    }
+  }
+
+  const garfield = new cat();
+
+  garfield.play(4);
+  garfield.chill(6);
+  garfield.getAngry(3);
+  garfield.eat(9);
+  garfield.play(10);
+  garfield.printStatus();
+
+  //The Recipe card 
+  const recipe = {
+    'title' : 'Mole',
+    'servings' : 2,
+    'ingredients' : ['cumin', 'cinnamon', 'coca']
+  };
+  console.log(recipe.title);
+  console.log('Servings: ' + recipe.servings); 
+  console.log('Ingredients: ');
+  for (let i=0; i < recipe.ingredients.length; ++) {
+    console.log(recipe.ingredients[i])
+  }
