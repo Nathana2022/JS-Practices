@@ -314,6 +314,11 @@ console.log(student);
 //Delete the least important attribute. Show the complete object again. 
 
 
+//Create of two objects shoe_1 and shoe_2
+let shoe_1 = {}
+let shoe_2 = {}
+let shirt_1 = {}
+let shirt_2 = {}
 
 //Virtual cat CLI Javascript
 class VirtualCat {
@@ -386,7 +391,7 @@ rl.on('line', (input) => {
 
 //Second façon
 
-let cat =  {
+let chat =  {
   name: "Roy",
   tiredness:0,
   hunger:0,
